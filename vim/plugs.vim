@@ -1,3 +1,5 @@
 call plug#begin('~/.vim/plugged')
-runtime! plugs/**/*.vim
+if filereadable(expand("~/.dotfiles/vim/plugs/all.vim"))
+  source ~/.dotfiles/vim/plugs/all.vim
+endif
 call plug#end()
