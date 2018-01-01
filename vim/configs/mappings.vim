@@ -1,2 +1,3 @@
-" change next
-nnoremap c* *Ncgn
+inoremap jk <esc>
+nnoremap c* *Ncgn " change next
+
