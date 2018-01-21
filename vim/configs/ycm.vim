@@ -17,3 +17,8 @@ let g:ycm_seed_identifiers_with_syntax=1
 let g:ycm_python_binary_path = '/usr/local/bin/python3'
 " leader g for going to the definitions
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" YCM disable list
+" let g:ycm_filetype_blacklist={'notes': 1, 'markdown': 1, 'unite': 1, 'tagbar': 1, 'pandoc': 1, 'qf': 1, 'vimwiki': 0, 'text': 1, 'infolog': 1, 'mail': 1}
+let g:ycm_filetype_blacklist = {}
+" Do trigger YCM, when command space is pressed, or when symentics used
+let g:ycm_min_num_of_chars_for_completion = 99

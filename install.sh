@@ -11,3 +11,8 @@ if [ ! -f "$HOME/.tmux.conf" ]; then
 	echo "Updating tmux.conf"
 	cp tmux.conf ~/.tmux.conf
 fi
+
+if [ ! -f "$HOME/.ctags" ]; then
+	echo "Updating ctags"
+	cp ctags ~/.ctags
+fi

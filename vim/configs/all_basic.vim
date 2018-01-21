@@ -11,7 +11,9 @@ set wildmenu
 set display+=lastline " dont show @ is line does not fit
 set formatoptions+=j " delete comment character when joining commented lines
 setglobal tags-=./tags tags-=./tags; tags^=./tags;
-set cursorline
+set nocursorline
+set lazyredraw
+
 " Clipboard
 set clipboard=unnamed
 
@@ -35,7 +37,7 @@ set ignorecase
 set smartcase
 nnoremap <expr> n 'Nn'[v:searchforward]
 nnoremap <expr> N 'nN'[v:searchforward]
-nnoremap <leader>hl :set hlsearch!<CR>
+nnoremap <leader>hl :noh<CR>
 
 " scroll settings
 set scrolloff=5
@@ -46,11 +48,11 @@ set listchars=tab:│\ ,extends:›,precedes:‹,nbsp:·,trail:·
 
 " numberline settings
 set number
-set relativenumber
+" set relativenumber
 map <leader>r :call function#cycle_numbering()<CR>
 
 " set colours
-set t_ut=
+set t_Co=256
 set termguicolors
 set textwidth=0 " do not break lines
 set colorcolumn=80
@@ -77,15 +79,26 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " reload vimrc
 map <silent> <leader>v :source ~/.vimrc<CR>:exe ":echo 'vimrc reloaded'"<CR>
-map <silent> <leader>e :e ~/.vim/configs/general.vim<CR>:cd ~/.vim<CR>:exe ":echo 'vimrc opened'"<CR>
+map <silent> <leader>e :e ~/.dotfiles/vim/configs/all_basic.vim<CR>:cd ~/.dotfiles/vim/<CR>:exe ":echo 'vimrc opened'"<CR>
 map <silent> <leader>cd :cd %:h<CR>
 
 " set colorscheme
-colorscheme solarized8_dark_high
-map <leader>b :colorscheme solarized8_dark_high<CR>
-map <leader>w :colorscheme solarized8_light_high<CR>
+set background=dark
+map <leader>b :set background=dark<CR>
+map <leader>w :set background=light<CR>
+source ~/.dotfiles/vim/configs/gruvbox.vim
+colorscheme gruvbox
 
 " folding
 nnoremap <s-tab> za
 set foldlevelstart=1
 set foldmethod=syntax
+
+" cursor
+if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\e[5 q\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\e[2 q\<Esc>\\"
+else
+    let &t_SI = "\e[5 q"
+    let &t_EI = "\e[2 q"
+endif
