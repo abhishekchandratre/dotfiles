@@ -1,11 +1,11 @@
 let g:vimwiki_list = [
-			\ {'path': '~/Desktop/vimwiki/tech',
+			\ {'path': '~/Dropbox/vimwiki/tech',
 			\ 'path_html': '~/Desktop/vimwikihtml',
 			\ 'syntax': 'markdown',
 			\ 'ext': '.md',
 			\ 'custom_wiki2html': '~/.dotfiles/vim/wiki2html.sh', },
 			\
-			\ {'path': '~/Desktop/vimwiki/life/',
+			\ {'path': '~/Dropbox/vimwiki/life/',
 			\ 'path_html': '~/Desktop/vimwikihtml',
 			\ 'syntax': 'markdown',
 			\ 'ext': '.md',
