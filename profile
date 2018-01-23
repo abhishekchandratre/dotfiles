@@ -8,7 +8,7 @@ export TERM=xterm-256color
 export PATH=$PATH:$HOME/bin
 
 # import z sh
-source ~/z.sh
+source ~/.dotfiles/z.sh
 
 # set vim as default editor
 export EDITOR=vim

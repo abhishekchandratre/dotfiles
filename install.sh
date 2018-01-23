@@ -12,6 +12,3 @@ cp tmux.conf ~/.tmux.conf
 
 echo "Updating ctags"
 cp ctags ~/.ctags
-
-echo "Updating profile"
-cp profile ~/.profile
