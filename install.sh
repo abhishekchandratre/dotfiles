@@ -7,12 +7,11 @@ if [ ! -d "$HOME/.vim" ]; then
 	cp vim/autoload/plug.vim ~/.vim/autoload
 fi
 
-if [ ! -f "$HOME/.tmux.conf" ]; then
-	echo "Updating tmux.conf"
-	cp tmux.conf ~/.tmux.conf
-fi
+echo "Updating tmux.conf"
+cp tmux.conf ~/.tmux.conf
 
-if [ ! -f "$HOME/.ctags" ]; then
-	echo "Updating ctags"
-	cp ctags ~/.ctags
-fi
+echo "Updating ctags"
+cp ctags ~/.ctags
+
+echo "Updating profile"
+cp profile ~/.profile
