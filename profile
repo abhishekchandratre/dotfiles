@@ -2,7 +2,7 @@
 # export CLICOLOR=1
 
 # Set colors to match iTerm2 Terminal Colors
-export TERM=xterm-256color
+export TERM=xterm-256color-italic
 
 # Add bin of home directory
 export PATH=$PATH:$HOME/bin
