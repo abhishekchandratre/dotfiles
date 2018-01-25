@@ -1,6 +1,7 @@
 " common
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'terryma/vim-multiple-cursors'
 
 " file navigation
 Plug 'kien/ctrlp.vim'

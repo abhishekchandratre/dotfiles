@@ -6,3 +6,4 @@ let g:tagbar_type_markdown = {
         \ 'k:Heading_L3'
     \ ]
 \ }
+nmap <F8> :TagbarToggle<CR>
