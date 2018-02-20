@@ -2,6 +2,8 @@
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'godlygeek/tabular'
+Plug 'chrisbra/NrrwRgn'
 
 " file navigation
 Plug 'kien/ctrlp.vim'
@@ -60,3 +62,6 @@ Plug 'majutsushi/tagbar'
 
 " Date
 Plug 'tpope/vim-speeddating'
+
+" Tmux
+Plug 'benmills/vimux'
