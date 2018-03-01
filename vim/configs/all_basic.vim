@@ -105,3 +105,6 @@ endif
 
 " easily edit macro in q reg
 nnoremap <leader>... :<c-u><c-r><c-r>='let @q = '. string(getreg('q'))<cr><c-f><left>
+
+" Open file is read open if presented with option
+autocmd SwapExists * let v:swapchoice = "o"
