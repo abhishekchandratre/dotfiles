@@ -6,6 +6,7 @@ export TERM=xterm-256color-italic
 
 # Add bin of home directory
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:/usr/local/bin
 
 # import z sh
 source ~/.dotfiles/z.sh
