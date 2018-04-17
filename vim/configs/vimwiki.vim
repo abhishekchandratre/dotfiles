@@ -11,12 +11,13 @@ let g:vimwiki_list = [
 			\ 'ext': '.md',
 			\ 'custom_wiki2html': '~/.dotfiles/vim/wiki2html.sh', }]
 
-autocmd FileType vimwiki call SetMarkdownOptions()
+" function! SetMarkdownOptions()
+" 	call VimwikiSet('syntax', 'markdown')
+" 	call VimwikiSet('custom_wiki2html', 'wiki2html.sh')
+" endfunction
 
-function! SetMarkdownOptions()
-	call VimwikiSet('syntax', 'markdown')
-	call VimwikiSet('custom_wiki2html', 'wiki2html.sh')
-endfunction
+" autocmd FileType vimwiki call SetMarkdownOptions()
+
 
 nnoremap <leader>w_ :VimwikiSplitLink<CR>
 nnoremap <leader>w\| :VimwikiSplitLink<CR>
