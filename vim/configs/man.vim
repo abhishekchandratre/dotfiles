@@ -1,1 +1,1 @@
-runtime! ftplugin/man.vim
+set keywordprg=:Man
