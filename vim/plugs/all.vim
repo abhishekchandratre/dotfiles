@@ -7,6 +7,7 @@ Plug 'chrisbra/NrrwRgn'
 
 " file navigation
 Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-unimpaired'
 
 " markdown
 Plug 'abhishekchandratre/markdown-helper.vim'
